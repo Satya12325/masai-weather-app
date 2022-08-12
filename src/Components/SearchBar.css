@@ -1,0 +1,104 @@
+.searchInputs {
+   
+    display: flex;
+    width:350px;
+    margin: auto;
+    border-radius: 23px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .search input {
+    background-color: rgb(252, 237, 237);
+    border: 0;
+    border-radius: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    padding: 15px;
+    height: 30px;
+    width: 300px;
+    border-top-left-radius: 23px;
+    /* border-bottom-left-radius: 23px; */
+  }
+  
+  .searchIcon {
+    height: 60px;
+    width: 50px;
+    background-color: rgb(252, 237, 237);
+    display: grid;
+    place-items: center;
+    /* border-top-right-radius: 23px; */
+    border-bottom-right-radius: 23px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .searchIcon svg {
+    font-size: 35px;
+  }
+  
+  .dataResult {
+    margin-top: 5px;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+    margin:auto;
+    border-radius: 23px;
+  }
+  
+  .dataResult::-webkit-scrollbar {
+    display: none;
+  }
+  .results{
+    display: flex;
+    justify-content: space-around;
+  }
+  .dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .dataItem p {
+    margin-left: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: lightgrey;
+  }
+  
+  #clearBtn {
+    cursor: pointer;
+  }
+
+  /* Card css */
+  .main-card{
+   color: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+  }
+
+  .TempCard{
+    display: flex;
+    justify-content: space-between;
+  }
+  .smallCard{
+    width:100px;
+    padding: 19px;
+    background-color: rgb(246, 214, 214);
+    
+  }
