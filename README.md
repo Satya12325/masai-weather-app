@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-
+<img src="https://github.com/Satya12325/masai-weather-app/blob/master/screencapture-localhost-3000-2022-08-18-14_27_10.png?raw=true"/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
