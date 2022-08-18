@@ -8,12 +8,24 @@ ChartJS.register(
 )
 
 function Chart({temp}) {
+  var currentday = new Date();
+  var currentdayHour = currentday.getHours();
+  var totalHours =[];
+
+  for(var i= currentdayHour; i<=currentdayHour+12;i++){
+    totalHours.push(i)
+  }
+  var dailyHoursData= [];
+
+  for(var j=currentdayHour;j<currentdayHour+12;j++){
+    dailyHoursData.push(Math.round(temp[j].temp))
+  }
     const [data, setData]= useState({
-        labels:["6 AM","9 AM","12 PM","1 PM","3 PM","6 PM"],
+        labels:totalHours,
         datasets:[
           {
             label:"First Dataset",
-            data:temp,
+            data:dailyHoursData,
             backgroundColor:'yellow',
             borderColor:'orange',
             tension:0.4,
@@ -26,7 +38,7 @@ function Chart({temp}) {
         ]
       })
       return (
-        <div className="App" style={{width:'500px', height:'800px',margin:"auto"}}>
+        <div className="App" style={{width:'500px',margin:"auto"}}>
           <Line data={data}>Hello</Line>
         </div>
       );

@@ -3,3 +3,10 @@
  
   padding-top: 60px;
 }
+.weakTemp{
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+  margin-top:2em;
+}
